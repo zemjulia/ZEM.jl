@@ -1,4 +1,4 @@
-MADS: Model Analysis & Decision Support in Julia (Mads.jl v1.0) 2016
+ZEM: Zeitgeist Environmental Management framework in Julia (ZEM v1.0) 2017
 ---------------
 
 Licensing: GPLv3: http://www.gnu.org/licenses/gpl-3.0.html
@@ -9,4 +9,7 @@ Copyright 2016.  Los Alamos National Security, LLC. This material was produced u
 
 Additionally, this program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. Accordingly, this program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-LA-CC-15-080; Copyright Number Assigned: C16008
+This code was developed using the funding from the U.S. Department of Energy, Environmental Management Program under the following B&R code: EY6004300.  A signed memo from Carl E. Oliver, Associate Director for the DOE Office of Science/Office of Advance Scientific Computing Research and William H. Reed, Acting Director of the Office of Defense Programs/Office of Advanced Simulation and Computing (formerly ASCI) grants concurrence to distribute DOE Laboratory software as Open Source Software.
+
+LANS Copyright Number Assigned: C17004
+B&R Code: EY6004300

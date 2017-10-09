@@ -1,12 +1,16 @@
-Example Julia package repo.
+ZEM.jl: Framework for Management Groundwater Flow and Transport Models
+=======================================
 
-[![Example](http://pkg.julialang.org/badges/Example_0.4.svg)](http://pkg.julialang.org/?pkg=Example)
-[![Example](http://pkg.julialang.org/badges/Example_0.5.svg)](http://pkg.julialang.org/?pkg=Example)
-[![Example](http://pkg.julialang.org/badges/Example_0.6.svg)](http://pkg.julialang.org/?pkg=Example)
+[![julialang](http://pkg.julialang.org/badges/ZEM_0.5.svg)](http://pkg.julialang.org/?pkg=ZEM&ver=0.5)
+[![travis-ci](https://travis-ci.org/zemjulia/ZEM.jl.svg?branch=master)](https://travis-ci.org/zemjulia/ZEM.jl)
+[![coveralls.io](https://coveralls.io/repos/zemjulia/ZEM.jl/badge.svg?branch=master)](https://coveralls.io/r/zemjulia/ZEM.jl?branch=master)
+[![codecov.io](http://codecov.io/github/zemjulia/ZEM.jl/coverage.svg?branch=master)](http://codecov.io/github/zemjulia/ZEM.jl?branch=master)
 
-Linux: [![Build Status](https://travis-ci.org/JuliaLang/Example.jl.svg?branch=master)](https://travis-ci.org/JuliaLang/Example.jl)
 
-Windows: [![Build Status](https://ci.appveyor.com/api/projects/status/github/JuliaLang/Example.jl?branch=master&svg=true)](https://ci.appveyor.com/project/tkelman/example-jl/branch/master)
+----------------------------------------
 
-[![Coverage Status](https://coveralls.io/repos/JuliaLang/Example.jl/badge.svg?branch=master)](https://coveralls.io/r/JuliaLang/Example.jl?branch=master)
-[![codecov.io](http://codecov.io/github/JuliaLang/Example.jl/coverage.svg?branch=master)](http://codecov.io/github/JuliaLang/Example.jl?branch=master)
+ZEM is an integrated open-source high-performance computational (HPC) framework for environmental management in [Julia](http://julialang.org).
+ZEM includes a series of modules (FEHM, MySQL, etc.)
+ZEM is coupled to use [Mads](http://mads.lanl.gov)
+
+ZEM has been tested to perform HPC simulations on a wide-range multi-processor clusters and parallel environments (Moab, Slurm, etc.).
