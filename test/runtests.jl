@@ -1,5 +1,4 @@
-using Example
-using Base.Test
+import ZEM
+import Base.Test
 
-@test hello("Julia") == "Hello, Julia"
-@test_approx_eq domath(2.0) 7.0
+:passed
