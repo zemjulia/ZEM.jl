@@ -246,10 +246,10 @@ workingdir = abspath(joinpath(sp[1:end - 1]...))
 madsfilename = sp[end]
 geofilename = ARGS[2]
 scenarios = setscenarios(workingdir * ".jld")
-@everywhere scenarios = remotecall_fetch(()->scenarios, 1)
-@everywhere geofilename = remotecall_fetch(()->geofilename, 1)
-@everywhere workingdir = remotecall_fetch(()->workingdir, 1)
-@everywhere case = remotecall_fetch(()->case, 1)
+@eval @everywhere scenarios = $scenarios
+@eval @everywhere geofilename = $geofilename
+@eval @everywhere workingdir = $workingdir
+@eval @everywhere case = $case
 
 @everywhere startdir = pwd()
 @everywhere cd(workingdir)
