@@ -1,5 +1,8 @@
 module ModelProcessing
 
-include("")
+include("ZEMscenarios.jl")
+include("ZEMplot.jl")
+include("ZEMmovie.jl")
+
 
 end
