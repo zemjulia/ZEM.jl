@@ -95,8 +95,8 @@ const xmin = CrPlots.getwelllocation("R-01")[1] - 250
 const xmax = CrPlots.getwelllocation("R-36")[1] + 250
 const ymin = CrPlots.getwelllocation("R-34")[2] - 250
 const ymax = CrPlots.getwelllocation("R-43")[2] + 1000
-const gridxs = [x for x = linspace(xmin, xmax, n), y = linspace(ymin, ymax, n)]
-const gridys = [y for x = linspace(xmin, xmax, n), y = linspace(ymin, ymax, n)]
+const gridxs = [x for x = range(xmin, xmax; length=n), y = range(ymin, ymax; length=n)]
+const gridys = [y for x = range(xmin, xmax; length=n), y = range(ymin, ymax; length=n)]
 
 function integratealongxy(zintegrals)
 	gd1 = scint.griddata(hcat(xs[topnodes], ys[topnodes]), zintegrals, (gridxs, gridys), fill_value=0.0, method="linear")

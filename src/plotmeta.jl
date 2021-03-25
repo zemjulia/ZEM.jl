@@ -106,7 +106,7 @@ end
 axs[end-2][:legend](fontsize=4)
 axs[end-2][:tick_params](axis="both", which="major", labelsize=8)
 axs[end][:set_title]("Legend: observations")
-axs[end][:plot](map(year->Date(year, 7), collect(2001:2016)), log10(.5 * (9.99 * collect(linspace(1, 4, 16))) + .5 * (10.01 + 10 * collect(linspace(1, 4, 16))) + 5 * randn(16)), "r.")
+axs[end][:plot](map(year->Date(year, 7), collect(2001:2016)), log10(.5 * (9.99 * collect(range(1, 4; length=16))) + .5 * (10.01 + 10 * collect(range(1, 4; length=16))) + 5 * randn(16)), "r.")
 axs[end][:tick_params](axis="both", which="major", labelsize=8)
 PyPlot.setp(axs, xticks=map(year->Date(year, 7), [2001, 2006, 2011, 2016]))
 PyPlot.tight_layout()

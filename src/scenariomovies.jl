@@ -125,7 +125,7 @@ for scenarioname1 in keys(scenarios), scenarioname2 in ["no_action"]
 			@show 1964 + (t / 365.25)
 			fig, ax, img = CrPlots.crplot(boundingbox, xs[topnodes], ys[topnodes], data[i]; upperlimit=diffupperlimit, lowerlimit=difflowerlimit)
 			CrPlots.addwells(ax, plotwells)
-			CrPlots.addcbar(fig, img, "Cr [ppb]", collect(linspace(difflowerlimit, diffupperlimit, 5)))
+			CrPlots.addcbar(fig, img, "Cr [ppb]", collect(range(difflowerlimit, diffupperlimit; length=5)))
 			CrPlots.addmeter(ax, boundingbox[3] - 1100, boundingbox[2] + 0, [250, 500, 1000], ["250m", "500m", "1km"])
 			CrPlots.addpbar(fig, ax, (t - minimum(times)) / (maximum(times) - minimum(times)), "Year $(@sprintf("%.2f",1964 + t / 365.25))")
 			#display(fig); println()
