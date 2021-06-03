@@ -231,7 +231,7 @@ import Kriging
 		# Mads.runcmd(`bash -c "cd $dir; xfehm w01.files"`)
 	end
  *
-	function symlinkdir(filename::String, dir::String)
+	function symlinkdir(filename::AbstractString, dir::AbstractString)
 		symlink(abspath(filename), dir * "/" * filename)
 	end
 end

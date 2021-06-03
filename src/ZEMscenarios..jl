@@ -1,6 +1,6 @@
 import JLD
 
-function setscenarios(filename::String="scenarios.jld")
+function setscenarios(filename::AbstractString="scenarios.jld")
 	colors = ["b", "g", "r", "c", "m", "y", "k", "b--", "g--", "r--", "c--", "m--", "y--", "k--"]
 	scenarios = Dict()
 	scenarioname = "no_action"

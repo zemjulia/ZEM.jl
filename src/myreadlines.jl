@@ -1,4 +1,4 @@
-function myreadlines(filename::String)
+function myreadlines(filename::AbstractString)
 	f = open(filename)
 	l = myreadlines(f)
 	close(f)
